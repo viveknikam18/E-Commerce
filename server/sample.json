@@ -1,0 +1,37 @@
+{
+  "firstName": "Rahul",
+  "lastName": "Sharma",
+  "email": "rahul.sharma@example.com",
+  "password": "StrongPass123",
+  "age": 28,
+  "gender": "Male",
+  "isActive": true,
+  "isVerified": false,
+  "dateOfBirth": "1997-05-15T00:00:00.000Z",
+  "skills": ["Node.js", "React", "MongoDB", "Express"],
+  "address": {
+    "street": "MG Road Near City Mall",
+    "city": "Jalgaon",
+    "state": "MAHARASHTRA",
+    "postalCode": 425001
+  },
+  "preferences": {
+    "theme": "dark",
+    "notifications": true
+  },
+  "accountBalance": 5000,
+  "accountType": "business",
+  "companyName": "Technoweit Solutions",
+  "orders": [
+    {
+      "productName": "Laptop",
+      "price": 55000,
+      "quantity": 1
+    },
+    {
+      "productName": "Mouse",
+      "price": 500,
+      "quantity": 2
+    }
+  ]
+}
