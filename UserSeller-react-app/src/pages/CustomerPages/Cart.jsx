@@ -170,11 +170,9 @@ const Cart = () => {
       <Grid item xs={12} sm={4} md={3}>
         <Box
           component="img"
-          // src={`http://localhost:5000/uploads/${item.prodImage}`}
+          src={`http://localhost:5000/uploads/${item.prodImage}`}
 
-          src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodImage}`}
-
-
+          // src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodImage}`}
            
           alt={item.productName}
           sx={{ width: 120, height: 120, objectFit: "cover" }}

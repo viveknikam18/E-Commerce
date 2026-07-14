@@ -55,8 +55,8 @@ const Product = () => {
   useEffect(()=>{
     let fetchProduct = async ()=>{
       // let result = await axios.get("http://localhost:5000/api/fetchproduct")
-      // let result = await axios.get("http://localhost:5000/api/fetchProductWithAvarageReview")
-      let result = await axios.get(" https://e-commerce-ewhg.onrender.com/api/fetchProductWithAvarageReview")
+      let result = await axios.get("http://localhost:5000/api/fetchProductWithAvarageReview")
+      // let result = await axios.get(" https://e-commerce-ewhg.onrender.com/api/fetchProductWithAvarageReview")
 
 
       setproductsData(result.data.data)
@@ -147,9 +147,9 @@ const Product = () => {
         rating: reviweForm.rating,
         comment: reviweForm.comment.trim()
       }
-      // const {data}= await axios.post('http://localhost:5000/api/createreview',reqBody)
+      const {data}= await axios.post('http://localhost:5000/api/createreview',reqBody)
 
-      const {data}= await axios.post('https://e-commerce-ewhg.onrender.com/api/createreview',reqBody)
+      // const {data}= await axios.post('https://e-commerce-ewhg.onrender.com/api/createreview',reqBody)
 
 
       setreviewState({
@@ -304,8 +304,8 @@ const Product = () => {
             
           <Grid item xs={12} sm={6} md={6} lg={3} sx={{}}>
               <Card>
-                {/* <CardMedia sx={{ height: 320, width: "100%", objectFit: "cover"}} component="img" image={`http://localhost:5000/uploads/${prod.prodImage}`} /> */}
-                <CardMedia sx={{ height: 320, width: "100%", objectFit: "cover"}} component="img" image={`https://e-commerce-ewhg.onrender.com/uploads/${prod.prodImage}`} />
+                <CardMedia sx={{ height: 320, width: "100%", objectFit: "cover"}} component="img" image={`http://localhost:5000/uploads/${prod.prodImage}`} />
+                {/* <CardMedia sx={{ height: 320, width: "100%", objectFit: "cover"}} component="img" image={`https://e-commerce-ewhg.onrender.com/uploads/${prod.prodImage}`} /> */}
 
 
                 

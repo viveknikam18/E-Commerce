@@ -40,8 +40,8 @@ const AddProduct = () => {
     //simulate API call
     // await new Promise((resolve) => setTimeout(resolve, 5000));
 
-    // let result = await axios.post("http://localhost:5000/api/createproduct", reqBody,{
-    let result = await axios.post("https://e-commerce-ewhg.onrender.com/api/createproduct", reqBody,{
+    let result = await axios.post("http://localhost:5000/api/createproduct", reqBody,{
+    // let result = await axios.post("https://e-commerce-ewhg.onrender.com/api/createproduct", reqBody,{
       headers:{
         "Content-Type":"multipart/form-data"
       }

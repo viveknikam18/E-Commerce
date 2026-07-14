@@ -48,9 +48,9 @@ const CustomerOrders = () => {
     const fetchAllOrders = async () => {
       try {
         const result = await axios.get(
-          // `http://localhost:5000/api/fetchordersbyuserid/${userData._id}`
+          `http://localhost:5000/api/fetchordersbyuserid/${userData._id}`
 
-          `https://e-commerce-ewhg.onrender.com/api/fetchordersbyuserid/${userData._id}`
+          // `https://e-commerce-ewhg.onrender.com/api/fetchordersbyuserid/${userData._id}`
 
 
           

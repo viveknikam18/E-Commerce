@@ -46,9 +46,9 @@ const Register = () => {
     };
 
     try {
-      // const res = await axios.post("http://localhost:5000/api/auth/register", reqBody, {
+      const res = await axios.post("http://localhost:5000/api/auth/register", reqBody, {
 
-      const res = await axios.post(" https://e-commerce-ewhg.onrender.com/api/auth/register", reqBody, {
+      // const res = await axios.post(" https://e-commerce-ewhg.onrender.com/api/auth/register", reqBody, {
 
 
         

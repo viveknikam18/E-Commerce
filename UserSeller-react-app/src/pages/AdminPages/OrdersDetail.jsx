@@ -22,19 +22,19 @@ if (!order.ordersItems) {
     return (
       <Grid item xs={12} sm={6} md={4} key={item._id || item.prodId?._id}>
         <Card sx={{ height: '100%' }}>
-          {/* <CardMedia
+          <CardMedia
             sx={{ height: 200 }}
             component="img"
             src={`http://localhost:5000/uploads/${item.prodId?.prodImage}`}
             alt={item.prodId?.productName || "Product"}
-          /> */}
+          />
 
-          <CardMedia
+          {/* <CardMedia
             sx={{ height: 200 }}
             component="img"
             src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodId?.prodImage}`}
             alt={item.prodId?.productName || "Product"}
-          />
+          /> */}
 
           
 

@@ -49,9 +49,9 @@ const CheckOut = () => {
   }
 
   try {
-    // let result = await axios.post("http://localhost:5000/api/ordercreate", reqBody)
+    let result = await axios.post("http://localhost:5000/api/ordercreate", reqBody)
 
-    let result = await axios.post("    https://e-commerce-ewhg.onrender.com/api/ordercreate", reqBody)
+    // let result = await axios.post("    https://e-commerce-ewhg.onrender.com/api/ordercreate", reqBody)
 
 
     alert("Orders Created")
@@ -238,9 +238,9 @@ const CheckOut = () => {
                 <Grid item xs={12} sm={4} md={3}>
                   <Box
                     component="img"
-                    // src={`http://localhost:5000/uploads/${item.prodImage}`}
+                    src={`http://localhost:5000/uploads/${item.prodImage}`}
 
-                    src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodImage}`}
+                    // src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodImage}`}
 
                     alt={item.productName}
                     sx={{ width: 100, height: 100, objectFit: "cover" }}

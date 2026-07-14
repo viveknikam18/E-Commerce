@@ -17,8 +17,8 @@ const AllOrders = () => {
   useEffect(() => {
     const fetchAllOrders = async () => {
       try {
-        // const result = await axios.get(`http://localhost:5000/api/fetchallorders`);
-        const result = await axios.get(`https://e-commerce-ewhg.onrender.com`);
+        const result = await axios.get(`http://localhost:5000/api/fetchallorders`);
+        // const result = await axios.get(`https://e-commerce-ewhg.onrender.com`);
         setAllOrders(result.data.data);
       } catch (error) {
         console.error("Error fetching orders:", error);
@@ -45,8 +45,8 @@ const AllOrders = () => {
     };
 
     try {
-      // await axios.put("http://localhost:5000/api/updateorder", reqBody);
-      await axios.put("https://e-commerce-ewhg.onrender.com/api/updateorder", reqBody);
+      await axios.put("http://localhost:5000/api/updateorder", reqBody);
+      // await axios.put("https://e-commerce-ewhg.onrender.com/api/updateorder", reqBody);
       alert("Order Status Updated");
 
       // Update UI without reload

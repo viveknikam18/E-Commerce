@@ -40,8 +40,8 @@ const AllProduct = () => {
   // Fetch Products
   useEffect(() => {
     const fetchProduct = async () => {
-      // const result = await axios.get("http://localhost:5000/api/fetchproduct")
-      const result = await axios.get("https://e-commerce-ewhg.onrender.com/api/fetchproduct")
+      const result = await axios.get("http://localhost:5000/api/fetchproduct")
+      // const result = await axios.get("https://e-commerce-ewhg.onrender.com/api/fetchproduct")
       setProductData(result.data.data)
     }
     fetchProduct()
@@ -92,14 +92,14 @@ const AllProduct = () => {
         productPrice: priceForm.productPrice
       }
 
-      // const { data } = await axios.put(
-      //   "http://localhost:5000/api/updateproductprice",
-      //   reqBody
-      // )
-       const { data } = await axios.put(
-        "https://e-commerce-ewhg.onrender.com/api/updateproductprice",
+      const { data } = await axios.put(
+        "http://localhost:5000/api/updateproductprice",
         reqBody
       )
+      //  const { data } = await axios.put(
+      //   "https://e-commerce-ewhg.onrender.com/api/updateproductprice",
+      //   reqBody
+      // )
 
       
 
@@ -135,17 +135,17 @@ const AllProduct = () => {
         {ProductData.map((prod) => (
           <Grid item xs={12} sm={6} md={6} lg={3} key={prod._id}>
             <Card>
-              {/* <CardMedia
+              <CardMedia
                 component="img"
                 sx={{ height: 320 }}
                 image={`http://localhost:5000/uploads/${prod.prodImage}`}
-              /> */}
+              />
 
-               <CardMedia
+               {/* <CardMedia
                 component="img"
                 sx={{ height: 320 }}
                 image={`https://e-commerce-ewhg.onrender.com/uploads/${prod.prodImage}`}
-              />
+              /> */}
 
 
               

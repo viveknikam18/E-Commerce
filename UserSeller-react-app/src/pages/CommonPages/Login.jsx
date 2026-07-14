@@ -33,8 +33,8 @@ const Login = () => {
        }
    
    try {
-      // const {data} = await axios.post("http://localhost:5000/api/auth/login", {
-      const {data} = await axios.post(" https://e-commerce-ewhg.onrender.com/api/auth/login", {
+      const {data} = await axios.post("http://localhost:5000/api/auth/login", {
+      // const {data} = await axios.post(" https://e-commerce-ewhg.onrender.com/api/auth/login", {
  
         email,
         password

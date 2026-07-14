@@ -66,8 +66,8 @@ let cancleOrderReq = async ()=>{
     orderStatus:"cancel"
   }
   try {
-    // let result = await axios.put("http://localhost:5000/api/updateorder", reqBody)
-    let result = await axios.put("https://e-commerce-ewhg.onrender.com/api/updateorder", reqBody)
+    let result = await axios.put("http://localhost:5000/api/updateorder", reqBody)
+    // let result = await axios.put("https://e-commerce-ewhg.onrender.com/api/updateorder", reqBody)
 
     
     alert("Order Cancle")
@@ -89,8 +89,8 @@ let PaymentCreate = async ()=>{
       paymentStatus: "success"
   }
   try {
-    // let result = await axios.put("http://localhost:5000/api/paymentupdate",ReqBody)
-    let result = await axios.put(" https://e-commerce-ewhg.onrender.com/api/paymentupdate",ReqBody)
+    let result = await axios.put("http://localhost:5000/api/paymentupdate",ReqBody)
+    // let result = await axios.put(" https://e-commerce-ewhg.onrender.com/api/paymentupdate",ReqBody)
 
    
      alert("Payment Successful")
@@ -187,13 +187,9 @@ const handleOpenReviweDialog = (product) =>{
         rating: reviweForm.rating,
         comment: reviweForm.comment.trim()
       }
-      // const {data}= await axios.post('http://localhost:5000/api/createreview',reqBody)
+      const {data}= await axios.post('http://localhost:5000/api/createreview',reqBody)
 
-      const {data}= await axios.post('https://e-commerce-ewhg.onrender.com/api/createreview',reqBody)
-
-
-       
-
+      // const {data}= await axios.post('https://e-commerce-ewhg.onrender.com/api/createreview',reqBody)
       setreviewState({
         loading: false,
         success: true,
@@ -344,9 +340,9 @@ const handleOpenReviweDialog = (product) =>{
           <CardMedia
             sx={{ height: 200 }}
             component="img"
-            // src={`http://localhost:5000/uploads/${item.prodId?.prodImage}`}
+            src={`http://localhost:5000/uploads/${item.prodId?.prodImage}`}
 
-            src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodId?.prodImage}`}
+            // src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodId?.prodImage}`}
 
             alt={item.prodId?.productName || "Product"}
           />
