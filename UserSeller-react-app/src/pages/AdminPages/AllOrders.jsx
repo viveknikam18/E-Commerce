@@ -46,7 +46,7 @@ const AllOrders = () => {
 
     try {
       // await axios.put("http://localhost:5000/api/updateorder", reqBody);
-      await axios.put("https://e-commerce-ewhg.onrender.com", reqBody);
+      await axios.put("https://e-commerce-ewhg.onrender.com/api/updateorder", reqBody);
       alert("Order Status Updated");
 
       // Update UI without reload

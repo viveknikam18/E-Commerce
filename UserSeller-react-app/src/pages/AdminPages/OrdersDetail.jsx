@@ -32,7 +32,7 @@ if (!order.ordersItems) {
           <CardMedia
             sx={{ height: 200 }}
             component="img"
-            src={`https://e-commerce-ewhg.onrender.com/${item.prodId?.prodImage}`}
+            src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodId?.prodImage}`}
             alt={item.prodId?.productName || "Product"}
           />
 

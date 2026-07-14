@@ -2,7 +2,7 @@ import mongoose from "mongoose"
 
 //creating string
 // let BASE_URL = "mongodb://localhost:27017/sample-db-2026"
-let BASE_URL = "https://e-commerce-ewhg.onrender.com"
+let BASE_URL = "https://e-commerce-ewhg.onrender.com/sample-db-2026"
 
 let connectToDb = async ()  =>{
     try {

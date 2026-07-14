@@ -41,7 +41,7 @@ const AllProduct = () => {
   useEffect(() => {
     const fetchProduct = async () => {
       // const result = await axios.get("http://localhost:5000/api/fetchproduct")
-      const result = await axios.get("https://e-commerce-ewhg.onrender.com")
+      const result = await axios.get("https://e-commerce-ewhg.onrender.com/api/fetchproduct")
       setProductData(result.data.data)
     }
     fetchProduct()
@@ -97,7 +97,7 @@ const AllProduct = () => {
       //   reqBody
       // )
        const { data } = await axios.put(
-        "https://e-commerce-ewhg.onrender.com",
+        "https://e-commerce-ewhg.onrender.com/api/updateproductprice",
         reqBody
       )
 
@@ -144,7 +144,7 @@ const AllProduct = () => {
                <CardMedia
                 component="img"
                 sx={{ height: 320 }}
-                image={`https://e-commerce-ewhg.onrender.com${prod.prodImage}`}
+                image={`https://e-commerce-ewhg.onrender.com/uploads/${prod.prodImage}`}
               />
 
 

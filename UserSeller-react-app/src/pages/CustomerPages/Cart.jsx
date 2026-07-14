@@ -172,7 +172,7 @@ const Cart = () => {
           component="img"
           // src={`http://localhost:5000/uploads/${item.prodImage}`}
 
-          src={`https://e-commerce-ewhg.onrender.com/${item.prodImage}`}
+          src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodImage}`}
 
 
            

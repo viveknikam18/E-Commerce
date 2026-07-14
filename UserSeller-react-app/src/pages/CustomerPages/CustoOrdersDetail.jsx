@@ -67,7 +67,7 @@ let cancleOrderReq = async ()=>{
   }
   try {
     // let result = await axios.put("http://localhost:5000/api/updateorder", reqBody)
-    let result = await axios.put("https://e-commerce-ewhg.onrender.com", reqBody)
+    let result = await axios.put("https://e-commerce-ewhg.onrender.com/api/updateorder", reqBody)
 
     
     alert("Order Cancle")
@@ -90,7 +90,7 @@ let PaymentCreate = async ()=>{
   }
   try {
     // let result = await axios.put("http://localhost:5000/api/paymentupdate",ReqBody)
-    let result = await axios.put(" https://e-commerce-ewhg.onrender.com",ReqBody)
+    let result = await axios.put(" https://e-commerce-ewhg.onrender.com/api/paymentupdate",ReqBody)
 
    
      alert("Payment Successful")
@@ -189,7 +189,7 @@ const handleOpenReviweDialog = (product) =>{
       }
       // const {data}= await axios.post('http://localhost:5000/api/createreview',reqBody)
 
-      const {data}= await axios.post('https://e-commerce-ewhg.onrender.com',reqBody)
+      const {data}= await axios.post('https://e-commerce-ewhg.onrender.com/api/createreview',reqBody)
 
 
        
@@ -346,7 +346,7 @@ const handleOpenReviweDialog = (product) =>{
             component="img"
             // src={`http://localhost:5000/uploads/${item.prodId?.prodImage}`}
 
-            src={`https://e-commerce-ewhg.onrender.com/${item.prodId?.prodImage}`}
+            src={`https://e-commerce-ewhg.onrender.com/uploads/${item.prodId?.prodImage}`}
 
             alt={item.prodId?.productName || "Product"}
           />
