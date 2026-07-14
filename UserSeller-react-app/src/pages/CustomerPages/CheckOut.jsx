@@ -49,7 +49,11 @@ const CheckOut = () => {
   }
 
   try {
-    let result = await axios.post("http://localhost:5000/api/ordercreate", reqBody)
+    // let result = await axios.post("http://localhost:5000/api/ordercreate", reqBody)
+
+    let result = await axios.post("    https://e-commerce-ewhg.onrender.com", reqBody)
+
+
     alert("Orders Created")
     navigate("/customer/customerorders")
   } catch (error) {
@@ -234,7 +238,10 @@ const CheckOut = () => {
                 <Grid item xs={12} sm={4} md={3}>
                   <Box
                     component="img"
-                    src={`http://localhost:5000/uploads/${item.prodImage}`}
+                    // src={`http://localhost:5000/uploads/${item.prodImage}`}
+
+                    src={`https://e-commerce-ewhg.onrender.com/${item.prodImage}`}
+
                     alt={item.productName}
                     sx={{ width: 100, height: 100, objectFit: "cover" }}
                   />

@@ -66,7 +66,10 @@ let cancleOrderReq = async ()=>{
     orderStatus:"cancel"
   }
   try {
-    let result = await axios.put("http://localhost:5000/api/updateorder", reqBody)
+    // let result = await axios.put("http://localhost:5000/api/updateorder", reqBody)
+    let result = await axios.put("https://e-commerce-ewhg.onrender.com", reqBody)
+
+    
     alert("Order Cancle")
     navigate("/customer/product")
   } catch (error) {
@@ -86,7 +89,10 @@ let PaymentCreate = async ()=>{
       paymentStatus: "success"
   }
   try {
-    let result = await axios.put("http://localhost:5000/api/paymentupdate",ReqBody)
+    // let result = await axios.put("http://localhost:5000/api/paymentupdate",ReqBody)
+    let result = await axios.put(" https://e-commerce-ewhg.onrender.com",ReqBody)
+
+   
      alert("Payment Successful")
     handleClosePayment()
     navigate("/customer/customerorders")
@@ -181,7 +187,12 @@ const handleOpenReviweDialog = (product) =>{
         rating: reviweForm.rating,
         comment: reviweForm.comment.trim()
       }
-      const {data}= await axios.post('http://localhost:5000/api/createreview',reqBody)
+      // const {data}= await axios.post('http://localhost:5000/api/createreview',reqBody)
+
+      const {data}= await axios.post('https://e-commerce-ewhg.onrender.com',reqBody)
+
+
+       
 
       setreviewState({
         loading: false,
@@ -333,7 +344,10 @@ const handleOpenReviweDialog = (product) =>{
           <CardMedia
             sx={{ height: 200 }}
             component="img"
-            src={`http://localhost:5000/uploads/${item.prodId?.prodImage}`}
+            // src={`http://localhost:5000/uploads/${item.prodId?.prodImage}`}
+
+            src={`https://e-commerce-ewhg.onrender.com/${item.prodId?.prodImage}`}
+
             alt={item.prodId?.productName || "Product"}
           />
 

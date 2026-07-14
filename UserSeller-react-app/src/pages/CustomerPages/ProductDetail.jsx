@@ -149,7 +149,10 @@ const ProductDetail = () => {
         <Box
           component="img"
           // src={prodData?.prodImage}
-          src={`http://localhost:5000/uploads/${prodData.prodImage}`}
+          // src={`http://localhost:5000/uploads/${prodData.prodImage}`}
+
+          src={` https://e-commerce-ewhg.onrender.com/${prodData.prodImage}`}
+
           alt={prodData?.productName}
           sx={{ width: 250, height: 300, objectFit: "cover" }}
         />
